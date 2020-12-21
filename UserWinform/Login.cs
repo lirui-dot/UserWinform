@@ -51,9 +51,10 @@ namespace UserWinform
                     Console.WriteLine(await response.Content.ReadAsStringAsync());
                     string json = await response.Content.ReadAsStringAsync();
                     ProvinceDetails province = JsonConvert.DeserializeObject<ProvinceDetails>(json);
-                    Province prs = new Province();
+                    
                     for (int i = 0; i < province.result.Count; i++)
                     {
+                        Province prs = new Province();
                         prs.id = province.result[i].id;
                         prs.name = province.result[i].name;
                         prs.parentid = province.result[i].parentid;
@@ -90,9 +91,10 @@ namespace UserWinform
                         Console.WriteLine(await response.Content.ReadAsStringAsync());
                         string json = await response.Content.ReadAsStringAsync();
                         ProvinceDetails province = JsonConvert.DeserializeObject<ProvinceDetails>(json);
-                        Province prs = new Province();
+                       
                         for (int i = 0; i < province.result.Count; i++)
                         {
+                            Province prs = new Province();
                             prs.id = province.result[i].id;
                             prs.name = province.result[i].name;
                             prs.parentid = province.result[i].parentid;

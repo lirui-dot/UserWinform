@@ -13,7 +13,7 @@ namespace UserWinform.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202012201410123_Init"; }
+            get { return "202012211052044_Init"; }
         }
         
         string IMigrationMetadata.Source
